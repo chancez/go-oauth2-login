@@ -15,7 +15,7 @@
 
 // This file is adapted from https://github.com/int128/oauth2cli/blob/d1b93b431e8429229b774c78b3259d29b304557b/config.go
 // Changes involve copying a few variables from main.go, and renaming Config to ServerConfig
-// and renaming Token to AuthorizationCodeToken
+// and renaming GetToken to AuthorizationCodeToken
 
 package login
 
@@ -28,7 +28,7 @@ import (
 	"golang.org/x/oauth2"
 )
 
-// ServerConfig represents a config for GetToken.
+// ServerConfig represents a config for AuthorizationCodeToken.
 type ServerConfig struct {
 	// OAuth2 config.
 	// RedirectURL will be automatically set to the local server.
